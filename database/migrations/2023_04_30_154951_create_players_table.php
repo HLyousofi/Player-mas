@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('position');
             $table->date('birth_day');
             $table->string('adress');
-            $table->integer('phone');
+            $table->string('phone');
             $table->string('mail');
             $table->timestamps();
         });

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->integer('team_Id');
             $table->string('name');
             $table->string('adress');
-            $table->integer('phone');
+            $table->string('phone');
             $table->string('mail');
             $table->string('role');
             $table->timestamps();

@@ -27,7 +27,7 @@ class ContractController extends Controller
                    ->select('staff.name','contracts.*')
                    ->where(`'contract.beneficiary_Type','=',$staff`)
                    ->get();       
-        $result =   $playerContracts->concat($staffContracts);             
+        $result =   $playerContracts->union($staffContracts);             
                    
                    
         return  $result;
